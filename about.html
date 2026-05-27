@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About Us — VoLYAVET Veterinary Clinic" />
+    <meta name="description" content="About Us — LoonlyBustik Game Boost Shop" />
     <meta name="keywords" content="" />
     <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp" />
@@ -11,7 +11,112 @@
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <title>About Us — VoLYAVET Veterinary Clinic</title>
+    <title>About Us — LoonlyBustik</title>
+    <style>
+      body {
+        background: #c840c8;
+      }
+
+      /* ── Founder image ── */
+      .aboutSection__right--founder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 20px 0;
+      }
+      .founder-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+      }
+      .founder-img-frame {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow:
+          0 0 35px 12px rgba(220, 80, 220, 0.75),
+          0 0 80px 30px rgba(200, 50, 200, 0.4);
+        border: 2px solid rgba(230, 110, 230, 0.5);
+      }
+      .founder-img-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: drop-shadow(0 0 18px rgba(220, 80, 220, 0.9));
+      }
+      .founder-label {
+        font-family: viennaposter, "Vienna Poster", gothampro_bold;
+        font-size: 22px;
+        color: #e868e8;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        text-shadow: 0 0 12px rgba(230, 100, 230, 0.9);
+      }
+
+      @media screen and (min-width: 1440px) {
+        .founder-img-frame {
+          width: 370px;
+          height: 370px;
+        }
+        .founder-label {
+          font-size: 26px;
+        }
+      }
+
+      /* ── Servers section ── */
+      .weHelp {
+        background: #b02ab8;
+        padding: 50px 0 60px;
+      }
+      .weHelp__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .weHelp__cardsWrapper--servers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .weHelp__card--server {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      .weHelp__card--server .text-xs {
+        font-family: viennaposter, "Vienna Poster", gothampro_bold;
+        font-size: 18px;
+        color: #f8f8f8;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .server-logo {
+        width: 190px;
+        height: 190px;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+      .server-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* ── Feedback / booking section ── */
+      .feedbacksection {
+        background: #c840c8;
+      }
+    </style>
   </head>
 
   <body id="body">
@@ -27,27 +132,30 @@
                   <img src="img/dropdown.svg" alt="" class="dropbtn-icon" />
                 </button>
                 <div class="dropdown-content">
-                  <a href="index.html#news">News & Offers</a>
-                  <a href="about.html">About Us</a>
-                 
-                  <a href="index.html#team">Our Team</a>
-                  <a href="index.html#feedback">Reviews</a>
-                 
+                  <a href="index.html#news">Новости и Акции</a>
+                  <a href="about.html">О нас</a>
+                  <a href="index.html#services">Услуги и Цены</a>
+                  <a href="index.html#library">Библиотека</a>
+                  <a href="index.html#team">Наша Команда</a>
+                  <a href="index.html#feedback">Отзывы</a>
+                  <a href="index.html#contacts">Контакты</a>
                 </div>
               </div>
             </div>
             <div class="header__col">
               <nav class="nav">
-                <a href="index.html#news" class="navLink">News & Offers</a
-                ><a href="about.html" class="navLink">About Us</a
-                ><a href="index.html#team" class="navLink">Our Team</a
-                ><a href="index.html#feedback" class="navLink">Reviews</a
-                >
+                <a href="index.html#news" class="navLink">Новости и Акции</a
+                ><a href="about.html" class="navLink">О нас</a
+                ><a href="index.html#services" class="navLink">Услуги и Цены</a
+                ><a href="index.html#library" class="navLink">Библиотека</a
+                ><a href="index.html#team" class="navLink">Наша Команда</a
+                ><a href="index.html#feedback" class="navLink">Отзывы</a
+                ><a href="index.html#contacts" class="navLink">Контакты</a>
               </nav>
             </div>
             <div class="header__col">
               <div class="header__search">
-                <input type="text" class="header__input" placeholder="Search" />
+                <input type="text" class="header__input" placeholder="Поиск" />
                 <img src="img/search.svg" alt="" class="header__searchIcon" />
               </div>
             </div>
@@ -55,9 +163,9 @@
         </header>
 
         <div class="breadcrums">
-          <a href="index.html" class="link breadcrums__link">Home</a>
+          <a href="index.html" class="link breadcrums__link">Главная</a>
           <hr class="breadcrums__hr" />
-          <p class="breadcrums__text">About Us</p>
+          <p class="breadcrums__text">О нас</p>
         </div>
       </div>
 
@@ -66,36 +174,32 @@
           <div class="aboutSection__left">
             <img src="img/about-line.png" alt="" class="aboutSection__line" />
             <h2 class="title title-xl">
-              Veterinary <br />
-              clinic VoLYAVET
+              Game Boost Shop <br />
+              LoonyStoRe
             </h2>
             <p class="text text-xs">
-              VolyaVet is more than just a veterinary clinic. We are family, your
-              support, and your foundation in everything related to your pets. <br />
-              We offer a personalized approach to every patient and owner. Here
-              you will be listened to, supported, and helped, because we understand the bond that
-              exists between a pet and its owner.
+              LoonyStar — it's not just a shop, it's your unfair advantage. We're the guys who
+              got your back when the game doesn't. No judgment here. Whether you're a total
+              noob or a tryherd who just needs that one skin — we got it. Fair play is cool and
+              all, but have you tried winning?
               <br /><br />
-              We provide a range of essential services: therapeutic,
-              surgical, dental, grooming, and more. <br />
-              Our specialists regularly improve their skills to deliver only
-              high-quality veterinary care.
+              We've got everything: bosses, skins, rare loot, in-game currency, and stuff you
+              didn't even know you needed. Our team plays 25/8 so your account looks like
+              you actually know what you're doing.
             </p>
             <div class="textGroup">
               <div class="text text-s">
-                Professional<br />
-                doctors with extensive<br />
-                experience
+                Pro boosters who<br />
+                haven't slept since 2018
               </div>
               <div class="text text-s">
-                New<br />
-                modern<br />
-                equipment
+                Top-tier pain &amp;<br />
+                sneaky time
               </div>
               <div class="text text-s">
-                Unlimited<br />
-                love and care<br />
-                for animals
+                We treat your<br />
+                inventory like our<br />
+                own baby
               </div>
             </div>
             <div class="aboutSection__ourMission">
@@ -104,54 +208,54 @@
                 <hr class="aboutSection__hr" />
               </div>
               <p class="text text-xs">
-                To elevate the quality of life for people and their pets,
-                providing impeccable veterinary care with
-                a high level of service, transparent processes, and care for
-                both the pet and the client.
+                Make you look goated without actually getting good. Fast
+                service, zero stress, and your wallet won't cry too much.
+                Probably.
               </p>
             </div>
           </div>
-          <div class="aboutSection__right">
-            <img src="img/about-us-1.jpg" alt="" class="image image-bl aboutSection__img-big" />
-            <img src="img/about-us-2.jpg" alt="" class="image aboutSection__img-small" />
-            <img src="img/about-us-3.jpg" alt="" class="image aboutSection__img-small" />
-            <img src="img/about-us-4.jpg" alt="" class="image aboutSection__img-small" />
+          <div class="aboutSection__right aboutSection__right--founder">
+            <div class="founder-wrap">
+              <div class="founder-img-frame">
+                <img src="img/feedback.png" alt="Founder" />
+              </div>
+              <span class="founder-label">FOUNDER</span>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="weHelp">
         <div class="container weHelp__container">
-          <h2 class="title title-withDot">Which animals we help</h2>
+          <h2 class="title title-withDot">Available on Different Servers</h2>
           <p class="text weHelp__text">
-            Our veterinary clinic is multidisciplinary, so for any of your
-            pet we will find a doctor who knows how to reach them and
-            can prescribe the right treatment
+            We're active on every major game server out there — pick your battlefield
+            and let us handle the grind. No server too sweaty, no lobby too toxic.
           </p>
-          <div class="weHelp__cardsWrapper">
-            <div class="weHelp__card">
-              <img src="img/cat.jpg" alt="" class="image" />
-              <p class="text text-xs">cats</p>
+          <div class="weHelp__cardsWrapper weHelp__cardsWrapper--servers">
+            <div class="weHelp__card weHelp__card--server">
+              <div class="server-logo">
+                <img src="img/service1.jpg" alt="FunTime" />
+              </div>
+              <p class="text text-xs">FunTime</p>
             </div>
-            <div class="weHelp__card">
-              <img src="img/dog.jpg" alt="" class="image" />
-              <p class="text text-xs">dogs</p>
+            <div class="weHelp__card weHelp__card--server">
+              <div class="server-logo">
+                <img src="img/service2.jpg" alt="ReallyWorld" />
+              </div>
+              <p class="text text-xs">ReallyWorld</p>
             </div>
-            <div class="weHelp__card">
-              <img src="img/rabbit.jpg" alt="" class="image" />
-              <p class="text text-xs">rabbits</p>
+            <div class="weHelp__card weHelp__card--server">
+              <div class="server-logo">
+                <img src="img/service3.jpg" alt="SpookyTime" />
+              </div>
+              <p class="text text-xs">SpookyTime</p>
             </div>
-            <div class="weHelp__card">
-              <img src="img/mouse.jpg" alt="" class="image" />
-              <p class="text text-xs">mice</p>
-            </div>
-            <div class="weHelp__card">
-              <img src="img/hamster.jpg" alt="" class="image" />
-              <p class="text text-xs">hamsters</p>
-            </div>
-            <div class="weHelp__card">
-              <img src="img/ferret.jpg" alt="" class="image" />
-              <p class="text text-xs">ferrets</p>
+            <div class="weHelp__card weHelp__card--server">
+              <div class="server-logo">
+                <img src="img/service4.jpg" alt="BravoHVH" />
+              </div>
+              <p class="text text-xs">BravoHVH</p>
             </div>
           </div>
         </div>
@@ -159,31 +263,31 @@
 
       <section class="feedbacksection">
         <div class="container">
-          <h3 class="title title-withDot">Advance Booking</h3>
+          <h3 class="title title-withDot">Предварительная запись</h3>
           <p class="text feedbacksection__text">
-            Leave your details and our administrator will contact you to confirm
-            all appointment details as soon as possible
+            Оставьте свои данные и наш администратор свяжется с вами для
+            уточнения всех деталей записи в самое ближайшее время
           </p>
           <div class="feedbacksection__row">
             <div class="feedbacksection__left">
-              <img src="img/feedback.png" alt="" class="image image-br" />
+              <img src="img/logoo.png" alt="" class="image image-br" />
             </div>
             <div class="feedbacksection__right">
               <form class="feedbacksection__form" action="#">
-                <input type="text" class="input" placeholder="Your name" />
-                <input type="tel" class="input" placeholder="Phone" />
+                <input type="text" class="input" placeholder="Ваше имя" />
+                <input type="tel" class="input" placeholder="Телефон" />
                 <textarea
                   name="message"
                   id=""
                   cols="25"
                   rows="8"
                   class="input"
-                  placeholder="Message for the administrator"
+                  placeholder="Сообщение для администратора"
                 ></textarea>
-                <button class="button" type="submit">Book an Appointment</button>
+                <button class="button" type="submit">Записаться</button>
               </form>
               <div class="text">
-                By clicking the button you agree to the processing of personal data
+                Нажимая на кнопку вы соглашаетесь на обработку персональных данных
               </div>
             </div>
           </div>
@@ -207,15 +311,15 @@
           <div class="footer__col">
             <a href="#" class="link footer__link">
               <img src="img/locationIcon.svg" alt="" class="footer__icon" />
-              12 Germana Titov St., bldg. 1, Khimki
+              ул. Германа Титова, 12, корп. 1, г. Химки
             </a>
           </div>
           <div class="footer__col footer__colRights-desctop">
-            <p class="text">Site developed by <a href="#" class="footer__devLink">Nikita</a></p>
-            <p class="text">All rights reserved © 2023</p>
+            <p class="text">Сайт разработал <a href="#" class="footer__devLink">Никита</a></p>
+            <p class="text">Все права защищены © 2023</p>
           </div>
           <div class="footer__col footer__colOfferta">
-            <a href="offerta.html" class="link">Public Offer</a>
+            <a href="offerta.html" class="link">Публичная Оферта</a>
           </div>
           <div class="footer__col footer__colArrow">
             <div class="footer__socLinks">
@@ -227,8 +331,8 @@
             </a>
           </div>
           <div class="footer__col footer__colRights-mobile">
-            <p class="text">Site developed by <a href="#" class="footer__devLink">Nikita</a></p>
-            <p class="text">All rights reserved © 2023</p>
+            <p class="text">Сайт разработал <a href="#" class="footer__devLink">Никита</a></p>
+            <p class="text">Все права защищены © 2023</p>
           </div>
         </div>
       </div>
