@@ -1,0 +1,110 @@
+      /* фон фіолетовий */
+      body {
+        background: #c840c8;
+      }
+
+      /* ── фото засновника ── */
+      .aboutSection__right--founder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        padding: 20px 0;
+      }
+      .founder-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+      }
+      /* кругла рамка зі світінням */
+      .founder-img-frame {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow:
+          0 0 35px 12px rgba(220, 80, 220, 0.75),
+          0 0 80px 30px rgba(200, 50, 200, 0.4);
+        border: 2px solid rgba(230, 110, 230, 0.5);
+      }
+      /* фотка теж світиться */
+      .founder-img-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: drop-shadow(0 0 18px rgba(220, 80, 220, 0.9));
+      }
+      /* підпис капсом */
+      .founder-label {
+        font-family: viennaposter, "Vienna Poster", gothampro_bold;
+        font-size: 22px;
+        color: #e868e8;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        text-shadow: 0 0 12px rgba(230, 100, 230, 0.9);
+      }
+
+      /* великий екран — все більше */
+      @media screen and (min-width: 1440px) {
+        .founder-img-frame {
+          width: 370px;
+          height: 370px;
+        }
+        .founder-label {
+          font-size: 26px;
+        }
+      }
+
+      /* ── секція серверів ── */
+      .weHelp {
+        background: #b02ab8;
+        padding: 50px 0 60px;
+      }
+      .weHelp__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .weHelp__cardsWrapper--servers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .weHelp__card--server {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      /* текст під логотипом сервера */
+      .weHelp__card--server .text-xs {
+        font-family: viennaposter, "Vienna Poster", gothampro_bold;
+        font-size: 18px;
+        color: #f8f8f8;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      /* логотип сервера, квадратний */
+      .server-logo {
+        width: 190px;
+        height: 190px;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+      .server-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* ── відгуки / букінг ── */
+      .feedbacksection {
+        background: #c840c8;
+      }
