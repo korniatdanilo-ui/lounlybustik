@@ -2,10 +2,7 @@
     padding: 100px 0;
 }
 
-body {
-        background: #c840c8;
-      }
-
-      .feedbacksection {
-        background: #c840c8;
-      }
+    .footer, .feedbacksection , .servicesSection, body{
+            background: #c840c8;
+    }
+    .footer{ background: purple !important;}
