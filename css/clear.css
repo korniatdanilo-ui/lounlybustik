@@ -2,7 +2,42 @@
     padding: 100px 0;
 }
 
-    .footer, .feedbacksection , .servicesSection, body{
+    .footer, .feedbacksection , .servicesSection, body, .teamSection{
             background: #c840c8;
     }
     .footer{ background: purple !important;}
+    
+
+    .teamSection{
+        background: #D900FF;
+    }
+    .team-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .slider__item{
+        display: flex;
+        flex-direction: column;
+        width: 22%;
+        box-sizing: border-box;
+    }
+
+    .header__logo{
+        width: 100px;
+        margin-left: 100px;
+    }
+
+    .servicesSection__cards{
+        padding: 40px 16px;
+        display: flex;
+    }
+
+    .servicesSection__card{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: white;
+    }
