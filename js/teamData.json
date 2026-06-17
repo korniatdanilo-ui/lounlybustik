@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Oleksandr",
+    "role": "WebDesign",
+    "experience": "5 years",
+    "img": "img/team4.jpg"
+  },
+
+ {
+    "name": "Danilo",
+    "role": "WebDesign",
+    "experience": "1 year",
+    "img": "img/team4.jpg"
+  },
+
+ {
+    "name": "Owner",
+    "role": "Cheat developer",
+    "experience": "Experience - 5+ years",
+    "img": "img/team4.jpg"
+  },
+
+   {
+    "name": "Owner",
+    "role": "Cheat developer",
+    "experience": "Experience - 5+ years",
+    "img": "img/team4.jpg"
+  }
+
+
+]
