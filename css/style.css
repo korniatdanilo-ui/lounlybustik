@@ -2477,12 +2477,48 @@ ul {
   color: #f8f8f8;
 }
 .teamSection__itemSpan {
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
+  display: block;
+  margin-top: 12px;
   color: #d1fdff;
   font-size: 14px;
   line-height: 19px;
+}
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 280px;
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(209, 253, 255, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+  animation: teamCardEnter 0.55s ease-out forwards;
+  &:hover {
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+}
+.team-card__img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+.team-card__content {
+  position: relative;
+}
+@keyframes teamCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 @media screen and (min-width: 768px) {
   .teamSection {
@@ -2868,6 +2904,51 @@ ul {
   .weHelp__card .image {
     width: 400px;
     height: 190px;
+  }
+}
+.weHelp__card {
+  opacity: 0;
+  transform: translateY(24px) scale(0.98);
+  animation: weHelpCardEnter 0.55s ease-out forwards;
+}
+.weHelp__card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 22px 42px rgba(0, 0, 0, 0.22);
+}
+.button {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.2s ease;
+}
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.14);
+}
+.button--loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+.feedback-message {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 18px;
+  color: #f8f8f8;
+  opacity: 0.95;
+}
+.feedback-message--success {
+  color: #b6ffb8;
+}
+.feedback-message--error {
+  color: #ffb8b8;
+}
+@keyframes weHelpCardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 .whenSection {
