@@ -41,13 +41,11 @@
             </div>
             <div class="header__col">
               <nav class="nav">
-                <a href="index.html#news" class="navLink">News & Deals</a
+                <a href="index.html#products" class="navLink">Products</a
                 ><a href="about.html" class="navLink">About Us</a
-                ><a href="index.html#services" class="navLink">Services & Prices</a
-                ><a href="index.html#library" class="navLink">Library</a
                 ><a href="index.html#team" class="navLink">Our Team</a
                 ><a href="index.html#feedback" class="navLink">Reviews</a
-                ><a href="index.html#contacts" class="navLink">Contacts</a>
+                >
               </nav>
             </div>
             <div class="header__col">
@@ -129,48 +127,11 @@
             We're active on every major game server out there — pick your battlefield
             and let us handle the grind. No server too sweaty, no lobby too toxic.
           </p>
-          <div class="weHelp__cardsWrapper weHelp__cardsWrapper--servers">
-            <div class="weHelp__card weHelp__card--server">
-              <div class="server-logo">
-                <img src="img/image 1.png" alt="FunTime" />
-              </div>
-              <p class="text text-xs">FunTime</p>
-            </div>
-            <div class="weHelp__card weHelp__card--server">
-              <div class="server-logo">
-                <img src="img/image 2.png" alt="ReallyWorld" />
-              </div>
-              <p class="text text-xs">ReallyWorld</p>
-            </div>
-            <div class="weHelp__card weHelp__card--server">
-              <div class="server-logo">
-                <img src="img/image 3.png" alt="SpookyTime" />
-              </div>
-              <p class="text text-xs">SpookyTime</p>
-            </div>
-            <div class="weHelp__card weHelp__card--server">
-              <div class="server-logo">
-                <img src="img/image 5.png" alt="BravoHVH" />
-              </div>
-              <p class="text text-xs">SlimeWorld</p>
-            </div>
-             <div class="weHelp__card weHelp__card--server">
-              <div class="server-logo">
-                <img src="img/image 4.png" alt="BravoHVH" />
-              </div>
-              <p class="text text-xs">BravoHVH</p>
-            </div>
-             <div class="weHelp__card weHelp__card--server">
-              <div class="server-logo">
-                <img src="img/image 7.png" alt="MetaHVH" />
-              </div>
-              <p class="text text-xs">MetaHVH</p>
-            </div>
-          </div>
+          <div class="weHelp__cardsWrapper weHelp__cardsWrapper--servers" id="weHelpCards"></div>
         </div>
       </section>
 
-      <section class="feedbacksection">
+      <section class="feedbacksection" id="feedback">
         <div class="container">
           <h3 class="title title-withDot">Support</h3>
           <p class="text feedbacksection__text">
@@ -258,5 +219,6 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="js/main.min.js"></script>
+    <script src="js/weHelpRender.js"></script>
   </body>
 </html>
