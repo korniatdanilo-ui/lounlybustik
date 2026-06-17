@@ -1,31 +1,29 @@
 [
   {
-    "name": "Oleksandr",
-    "role": "WebDesign",
-    "experience": "5 years",
-    "img": "img/team4.jpg"
+    "name": "Owner",
+    "role": "Cheat developer",
+    "experience": "Experience - 5+ years",
+    "img": "img/team1.png"
   },
 
- {
+  {
     "name": "Danilo",
     "role": "WebDesign",
     "experience": "1 year",
-    "img": "img/team4.jpg"
+    "img": "img/team2.png"
   },
 
- {
+  {
     "name": "Owner",
     "role": "Cheat developer",
     "experience": "Experience - 5+ years",
-    "img": "img/team4.jpg"
+    "img": "img/team3.png"
   },
 
-   {
-    "name": "Owner",
-    "role": "Cheat developer",
-    "experience": "Experience - 5+ years",
-    "img": "img/team4.jpg"
+  {
+    "name": "Oleksandr",
+    "role": "WebDesign",
+    "experience": "5 years",
+    "img": "img/team4.png"
   }
-
-
 ]
