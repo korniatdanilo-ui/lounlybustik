@@ -3023,7 +3023,7 @@ ul {
   text-transform: uppercase;
 }
 .whenSection__item:hover {
-  background: rgba(89, 98, 129, 0.9);
+  background: rgb(128 0 128);
   font-family: gothampro_bold;
 }
 .whenSection__allButton {
