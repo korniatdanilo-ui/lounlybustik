@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.appendChild(feedbackNode);
 
     form.addEventListener('submit', function (event) {
-        event.preventDefault();
+        // event.preventDefault();
         console.log('Form submission intercepted for mock mode.');
         let name = form.querySelector('input[type="text"]').value.trim();
         let phone = form.querySelector('input[type="tel"]').value.trim();
